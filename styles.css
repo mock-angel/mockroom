@@ -1,0 +1,71 @@
+body {
+  font-family: system-ui;
+  background: #ffe4b8;
+  color: white;
+  text-align: center;
+  color: black;
+}
+
+#rcorners1 {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: #ed6a46;
+  padding: 20px;
+  width: 90%;
+  height: 90%;
+  max-width: 500px;
+  
+}
+
+#rwhitecorners2 {
+  box-shadow:0px 0px 10px ;
+
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  background: #ffffff;
+  padding: 20px;
+  width: 90%;
+  height: 90%;
+  max-width: 500px;
+  
+}
+
+#topbrick {
+  margin: auto;
+  
+  background: #ed6a46;
+  padding:20px;
+  margin-bottom: 10px;
+}
+#leftalign {
+  margin: left;
+  
+}
+
+input[type="text"],
+select.form-control {
+    border: none;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+input[type="email"],
+select.form-control {
+    border: none;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+
+input[type="number"],
+select.form-control {
+    border: none;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
