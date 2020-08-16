@@ -1,2 +1,23 @@
-.text-dark {
-  color: #151515 !important; }
+.bg-dark {
+  background-color: #151515 !important; }
+
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: black !important; }
+  
+  .bg-white {
+  background-color: #fff !important; }
+
+.bg-transparent {
+  background-color: transparent !important; }
+  
+  
+  
+  .bg-light {
+  background-color: #f3f3f3 !important; }
+
+a.bg-light:hover, a.bg-light:focus,
+button.bg-light:hover,
+button.bg-light:focus {
+  background-color: #dadada !important; }
