@@ -50,17 +50,17 @@
         
         <div class="collapse navbar-collapse justify-content-between" id="navbarText">
          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item active content-nav content-home" id="">
               <a class="nav-link" href="#" onClick="return onClickNavBar('ContentHome')">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item content-nav content-presets" id="">
               <a class="nav-link" href="#" onClick="return onClickNavBar('ContentPresets')">Presets</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item content-nav content-about" id="">
               <a class="nav-link" href="#" onClick="return onClickNavBar('ContentAbout')">About Me</a>
             </li>
             
-            <li class="nav-item">
+            <li class="nav-item content-nav content-contact" id="">
               <a class="nav-link" href="#" onClick="return onClickNavBar('ContentContact')">Contact</a>
             </li>
           </ul>
@@ -521,6 +521,11 @@ hr.style1{
 html {
   overflow-y: scroll;
 }
+
+
+body {
+  background: #ffe4b8;
+}
 </style>
 
 
@@ -625,17 +630,17 @@ html {
         
         <div class="collapse navbar-collapse justify-content-between" id="navbarText">
          <ul class="navbar-nav m-auto">
-            <li class="nav-item active">
+            <li class="nav-item active  content-nav content-home" id="">
               <a class="nav-link ContentNav" href="#" id='Home'  onClick="return onClickNavBar('ContentHome')"><b>Home</b> <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item content-nav content-presets" id="">
               <a class="nav-link ContentNav" href="#" id='Presets'  onClick="return onClickNavBar('ContentPresets')"><b>Presets</b></a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item content-nav content-about" id="">
               <a class="nav-link ContentNav" href="#" id='About'  onClick="return onClickNavBar('ContentAbout')"><b>About Me</b></a>
             </li>
             
-            <li class="nav-item ContentNav">
+            <li class="nav-item  content-nav content-contact" id="">
               <a class="nav-link " href="#" id='Contact' onClick="return onClickNavBar('ContentContact')"><b>Contact</b></a>
             </li>
           </ul>
@@ -659,19 +664,55 @@ html {
   <script>
   
 var strings = ["ContentHome", "ContentPresets", "ContentAbout", "ContentContact"];
+
 for(i in strings) 
   if(strings[i] != "ContentHome") jQuery("#"+strings[i]).hide(); 
 
+function convertToId(par){
+  var str = "";
+  
+  switch(par){
+  case "ContentHome":
+    str = "content-home";
+    break;
+    
+  case "ContentPresets":
+    str = "content-presets";
+    break;
+    
+  case "ContentAbout":
+    str = "content-about";
+    break;
+    
+  case "ContentContact":
+    str = "content-contact";
+    break;
+  
+  }
+  
+  return str;
+}
 
 function onClickNavBar(contentName) {
   
-  
-  
-  for(i in strings)
+  var contentNavElements = document.getElementsByClassName("content-nav");
+  var idTypeIdentifyer = convertToId(contentName);
+  var chosenContentNavElements = document.getElementsByClassName(idTypeIdentifyer);
+  for(i in strings){
     if(contentName != strings[i]) jQuery("#"+strings[i]).fadeOut();
-
+  }
+  
+  console.log(contentNavElements);
+  for(var i = 0; i < contentNavElements.length; i++) {
+    contentNavElements[i].classList.remove("active");
+    //console.log(contentNavElements[i].classList);
+  }
+    
   jQuery("#"+contentName).fadeIn();
   
+  for(var i = 0; i < chosenContentNavElements.length; i++)
+      chosenContentNavElements[i].classList += " active";
+
 }
 
 document.addEventListener('contextmenu', event => event.preventDefault());
