@@ -77,11 +77,39 @@
     
     <!---->
     
-    
+<style>
+ .left-half-section{
+	width:90%;
+	/*height:350px;*/
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 60%, var(--secondary) 40%);
+}
+
+.right-half-section{
+	width:90%;
+	margin-left: auto;
+	/*height:350px;*/
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 60%, var(--secondary) 40%) ;
+}
+
+.division-main-content{
+
+  border-radius: 10px 10px;
+  background-color: var(--block) ;
+  
+  box-shadow: 0px 0px var(--box-shadow-depth);
+}
+</style>
+
   <!--Main layout-->
   <main id="ContentHome" style="font-family: Karla;">
+  
+  
+<section >
+  <div class=" left-half-section p-4 ">
+    <div class="division-main-content container p-3">
+    
     <!--Carousel Wrapper-->
-    <div class="container pt-4">
+    <div class="container pt-4 pb-5">
       <div id="carousel-example-2" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
         
         <!--Indicators-->
@@ -141,9 +169,17 @@
       </div>
     </div>
     <!--/.Carousel Wrapper-->
+  </div>
+  </div>
+</section>
+  
+<section>
+  
+  <div class="right-half-section p-4">
+    <div class="division-main-content container p-3">
     
     <!--Carousel Wrapper-->
-    <div class="container pt-4">
+    <div class="container pt-4 pb-5">
       <div id="carousel-example-3" class="carousel slide carousel-fade z-depth-1-half" data-ride="carousel">
         
         <!--Indicators-->
@@ -204,9 +240,14 @@
     </div>
     <!--/.Carousel Wrapper-->
     
-    
-    
-    
+    </div>
+  
+  </div>
+</div>
+</section>
+  
+  
+<section>
     <div class="container">
     <div id="magicCarousel" class="carousel slide my-5" data-ride="carousel">
       
@@ -265,13 +306,15 @@
       </div>
     </div>
   </div>
-    </div>
-    
+</div>
+</section>
     
   </main>
   <!--Main layout-->
   
   <main id="ContentPresets">
+  
+  
     <div class="container pt-4">
       
     </div>
@@ -395,7 +438,7 @@ html {
 
 
 body {
-  background: #ffe4b8;
+  background: var(--background);/*#ffe4b8;*/
 }
 </style>
 
