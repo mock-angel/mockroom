@@ -14,10 +14,19 @@
   --gray: #6c757d;
   --gray-dark: #343a40;
   
-  --primary: #12bbad;
-  --secondary: #4f70ce;
+  /*--primary: #12bbad;
+  --secondary: #4f70ce;*/
+  --primary: #ff7f6d;
+  --secondary: #f1998f;
+  
   --light: #f3f3f3;
   --dark: #151515;
+  
+  /* Variables for Content block*/
+  --block: #28282a;
+  --box-shadow-depth: 10px;
+  
+  --background: #d1d3e4;
 }
 
 .bg-dark {
