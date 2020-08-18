@@ -336,6 +336,66 @@
       <div>
         Tell me something about you!
       </div>
+      
+      <div class="container" id="">
+        <!--<h2 style="text-align:center;padding:20px;">Contact Me</h2>-->
+        
+        <div class="container pt-3" id="" style="text-align: center; max-width: 400px;">
+          <form name="submit-to-google-sheet">
+
+            <div class="form-group">
+              <label for="Name">Full Name</label>
+              <input type="text" name="Name" class="form-control" id="inputName" placeholder="Enter name">
+            </div>
+            
+            <div class="form-group">
+              <label for="Email">Email address</label>
+              <input type="email" name="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            
+            <div class="form-group">
+              <label for="Number">Your Phone Number</label>
+              <input type="number" name="Number" class="form-control" id="inputNumber" placeholder="Enter number">
+            </div>
+            
+            <div class="form-group">
+              <label for="example1">What service(s) are you interested in?</label>
+            </div>
+            
+            <!--<div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check 1</label>
+            </div>
+            
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1" disabled>
+              <label class="form-check-label" for="exampleCheck2">Check 2</label>
+            </div>-->
+            
+            <div class="form-group">
+              <label for="How did u get to know of us?">How did you hear about me?</label>
+              <input type="text" name="How did u get to know of us?" class="form-control" id="inputHear" placeholder="">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" if="submit-form">Submit</button>
+          </form>
+          
+          <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxV0qoFSvJjMxv5Lm0DAAAb5NXF5nt-QL-Y7PwnwAWGFu4ANaE/exec'
+            const form = document.forms['submit-to-google-sheet']
+
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+            })
+
+          </script>
+        </div>
+      </div>
+      
     </div>
   </main>
     
@@ -478,7 +538,7 @@ body {
         <!--<h5 class="text-uppercase">LOGO</h5>-->
         <img src="logo_dark_t.png" class="img-fluid" alt="Responsive image" ><!--style="filter: invert(1);">-->
         <br>
-          <hr class="style1" style="background-color:#ffffff;">
+          <hr class="style1" style="background-color: #ffffff;">
         
         
         
@@ -612,9 +672,10 @@ function onClickNavBar(contentName) {
   var contentNavElements = document.getElementsByClassName("content-nav");
   var idTypeIdentifyer = convertToId(contentName);
   var chosenContentNavElements = document.getElementsByClassName(idTypeIdentifyer);
-  for(i in strings){
+  
+  for(i in strings)
     if(contentName != strings[i]) jQuery("#"+strings[i]).fadeOut();
-  }
+  
   
   console.log(contentNavElements);
   for(var i = 0; i < contentNavElements.length; i++) {
