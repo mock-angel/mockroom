@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <meta name="description" content="Demo">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="theme.css" >
+    
+    <!-- Style CSS (not required i guess)-->
+    <!--<link rel="stylesheet" href="styles.css">-->
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://wzrd.in/standalone/formdata-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+    
+    <title>Hello, world!</title>
+    
+        <!--[if (IE 8)|(IE 9)]>
+              <script type="text/javascript">
+                  window.location = '/en/old-browsers/';
+              </script>
+          -->
+
+        <script type="text/javascript">
+            if (window.opera) {
+                window.location = '/en/old-browsers/';
+            }
+        </script>
+    
+    <!-- Icons -->
+    <link rel="shortcut icon" href="assets/images/logo2.png" type="image/x-icon">
+    <link rel="icon" type="image/png" href="" sizes="16x16">
+    <link rel="icon" type="image/png" href="" sizes="32x32">
+    <link rel="icon" type="image/png" href="" sizes="96x96">
+    <link rel="icon" type="image/png" href="" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="60x60" href="">
+    <link rel="apple-touch-icon" sizes="120x120" href="">
+    <link rel="apple-touch-icon" sizes="180x180" href="">
+    <link rel="mask-icon" href="" color="#474747">
+    
+    
+  </head>
+  
+  <body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    
+    
+  <!--Main Navigation-->
+  <header>
+    <nav class="navbar navbar-expand-md navbar-light bg-normal noselect">
+      <div class="container">
+      
+        <!-- Navbar content -->
+        <span class="navbar-brand" href="#" style="max-width:300px;">
+          <img src="logo_dark_t.png" class=" img-fluid d-block  " alt="Responsive image" style="filter: invert(1);  height: auto;">
+        </span>
+        
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse justify-content-between" id="navbarText">
+         <ul class="navbar-nav ml-auto">
+            <li class="nav-item active content-nav content-home  mx-auto" id="">
+              <a class="nav-link" href="#" onClick="return onClickNavBar('ContentHome')">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item content-nav content-presets  mx-auto" id="">
+              <a class="nav-link" href="#" onClick="return onClickNavBar('ContentPresets')">Presets</a>
+            </li>
+            <li class="nav-item content-nav content-about  mx-auto" id="">
+              <a class="nav-link" href="#" onClick="return onClickNavBar('ContentAbout')">About Me</a>
+            </li>
+            
+            <li class="nav-item content-nav content-contact  mx-auto" id="">
+              <a class="nav-link" href="#" onClick="return onClickNavBar('ContentContact')">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div><!--div container-->
+    
+    </nav>
+  </header>
+  <!--Main Navigation-->
+
+    
+    <!---->
+    
+<style>
+ .left-half-section{
+	width:90%;
+	/*height:350px;*/
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 60%, var(--secondary) 40%);
+}
+
+.right-half-section{
+	width:90%;
+	margin-left: auto;
+	/*height:350px;*/
+	background: linear-gradient(to bottom, rgba(0,0,0,0) 60%, var(--secondary) 40%) ;
+}
+
+.division-main-content{
+
+  border-radius: 16px 16px;
+  background-color: var(--block) ;
+  
+  box-shadow: 0px 0px var(--box-shadow-depth);
+}
+
+
+</style>
+
+  <!--Main layout-->
+  <main id="ContentHome" style="font-family: Karla;" class="">
+  
+<section>
+  <div style="height:400px; width:100%;">
+    
+    <div class="container mx-auto pt-3">
+      <h2 style="text-align:center;">Hello!</h2>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section>
+  <div style="height:400px;" class="bg-secondary">
+    
+    <div style="text-align:center; float:left; width:50%;">
+      <h2 style="text-align:center; ">Hello!</h2>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+    
+    <div class="container mx-auto pt-3" style="float:right;  width:50%;">
+      <h2 style="text-align:center; ">Hello!</h2>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section>
+  <div style="height:400px;" class="bg-tertiary">
+    
+  </div>
+</section>
+
+<section>
+  <div style="height:400px;" class="bg-secondary">
+  
+  </div>
+</section>
+  
+  </main>
+  <!--Main layout-->
+  
+  <main id="ContentPresets">
+  
+  
+    <div class="container pt-4">
+      
+      
+
+  <!-- Compare Slider -->
+  <iframe src="Slider.html" style="width:1000px; height:700px; overflow:hidden;max-width:100%;" frameBorder="0"></iframe>
+  <!-- Compare Slider -->
+
+
+    </div>
+  
+  </main>
+  
+  <main id="ContentAbout">
+    <div class="container pt-4">
+      
+    </div>
+  </main>
+  
+  <main id="ContentContact" style="font-family: Karla;">
+    
+  </main>
+    
+    
+    <style>
+    .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  /*background-color: #f5f5f5;*/
+  }
+  
+  .fluid-container {
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
+    width: 100%;
+}
+
+.row {
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
+    width: 100%;
+}
+
+html, body, .fluid-container, #app-row, #map-container {
+    height: 100%
+}
+
+#app-row {
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
+}
+
+#map-container {
+    margin: 0 0 0 0 !important;
+    padding: 0 0 0 0 !important;
+}
+
+#map {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+.carousel {
+  position: relative;
+}
+
+.carousel-caption {
+  position: absolute;
+  background: rgba(0,0,0,0.4);
+  padding: 15px 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+}
+    </style>
+    
+<style>
+@font-face {
+  font-family: Karla;
+  src: url(Karla/Karla-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(Rubik/Rubik-Regular.ttf);
+}
+</style>    
+
+<style>
+hr.style1{
+	border-top: 3px solid #ffffff;
+	border-radius: 1px; 
+}
+
+.white_link a:visited {
+    color: #ffffff !important;
+}
+
+.white_link a:active {
+    color: #eeeeff !important;
+}
+
+.white_link a {
+    color: #eeeeee !important;
+}
+
+
+html {
+  overflow-y: scroll;
+}
+
+
+body {
+  background: var(--background);/*#ffe4b8;*/
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.enableselect {
+  -webkit-touch-callout: text; /* iOS Safari */
+    -webkit-user-select: text; /* Safari */
+     -khtml-user-select: text; /* Konqueror HTML */
+       -moz-user-select: text; /* Firefox */
+        -ms-user-select: text; /* Internet Explorer/Edge */
+            user-select: text; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+</style>
+
+
+<!--Footer-->
+
+<footer class="page-footer pt-0 " style="font-family: Karla;">
+    
+  <div class="page-footer pt-4" style="background-color: #000000; color: var(--text-color);">
+    
+    
+    
+    <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row d-flex justify-content-between">
+
+      
+      <!-- Grid column -->
+      <div class="col-md-3 mt-md-0 mt-3 ">
+
+        <!-- Content -->
+        <address class="white_link">
+          <h5 class="text-uppercase" >Contact Me</h5>
+          <p><a href="mailto:rakshithacharya10@gmail.com">rakshithacharya10@gmail.com</a></p>
+        </address>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3 m-auto" >
+
+      <!-- Grid column -->
+      <div class="col-md-4 mb-md-1 mb-3 text-md-center">
+
+        <!-- Links -->
+        <!--<h5 class="text-uppercase">LOGO</h5>-->
+        <img src="logo_dark_t.png" class="img-fluid" alt="Responsive image" ><!--style="filter: invert(1);">-->
+        <br>
+          <hr class="style1" style="background-color: #ffffff;">
+        
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 text-md-right mb-md-0 ">
+
+        <!-- Links -->
+        <h5 class="text-uppercase   ">Copyright</h5>
+
+        <div class="list-unstyled">
+
+            All content is copyright<br>
+
+            Mobocam photography<br>
+
+            2020 ©<br>
+
+          
+        </div>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+    
+    
+    
+    <!--<div class="container">--> <!--middle div-->
+    <nav class="navbar navbar-expand navbar-dark noselect" ><!-- style="background-color: #000000;">-->
+
+      <div class="container-fluid text-center text-md-left"><!-- style="background-color: #000000;"><!-- padding-top: 100px; padding-bottom: 20px;">-->
+      
+      
+        <!-- Navbar content -->
+        
+        
+        <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>-->
+        
+        <div class="collapse navbar-collapse justify-content-between" id="navbarText">
+         <ul class="navbar-nav m-auto">
+            <li class="nav-item active  content-nav content-home" id="">
+              <a class="nav-link ContentNav" href="#" id='Home'  onClick="return onClickNavBar('ContentHome')">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item content-nav content-presets" id="">
+              <a class="nav-link ContentNav" href="#" id='Presets'  onClick="return onClickNavBar('ContentPresets')">Presets</a>
+            </li>
+            <li class="nav-item content-nav content-about" id="">
+              <a class="nav-link ContentNav" href="#" id='About'  onClick="return onClickNavBar('ContentAbout')">About Me</a>
+            </li>
+            
+            <li class="nav-item  content-nav content-contact" id="">
+              <a class="nav-link " href="#" id='Contact' onClick="return onClickNavBar('ContentContact')">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div><!--div container-->
+    
+    </nav>
+    <!--</div>-->
+    
+    <!-- Copyright -->
+  <div class="footer-copyright text-center pb-3 white_link">© 2020 Copyright:
+    <a href="http://mock-angel.github.io/"> mock-angel.github.io/</a>
+  </div>
+  <!-- Copyright -->
+  
+  </div>
+</footer>
+<!--Footer-->
+  
+  
+  <script>
+  
+var strings = ["ContentHome", "ContentPresets", "ContentAbout", "ContentContact"];
+
+for(i in strings) 
+  if(strings[i] != "ContentHome") jQuery("#"+strings[i]).hide(); 
+
+function convertToId(par){
+  var str = "";
+  
+  switch(par){
+  case "ContentHome":
+    str = "content-home";
+    break;
+    
+  case "ContentPresets":
+    str = "content-presets";
+    break;
+    
+  case "ContentAbout":
+    str = "content-about";
+    break;
+    
+  case "ContentContact":
+    str = "content-contact";
+    break;
+  
+  }
+  
+  return str;
+}
+
+function onClickNavBar(contentName) {
+  
+  var contentNavElements = document.getElementsByClassName("content-nav");
+  var idTypeIdentifyer = convertToId(contentName);
+  var chosenContentNavElements = document.getElementsByClassName(idTypeIdentifyer);
+  
+  for(i in strings)
+    if(contentName != strings[i]) jQuery("#"+strings[i]).fadeOut();
+  
+  
+  console.log(contentNavElements);
+  for(var i = 0; i < contentNavElements.length; i++) {
+    contentNavElements[i].classList.remove("active");
+    //console.log(contentNavElements[i].classList);
+  }
+    
+  jQuery("#"+contentName).fadeIn();
+  
+  for(var i = 0; i < chosenContentNavElements.length; i++)
+      chosenContentNavElements[i].classList += " active";
+
+}
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+</script>
+
+
+<script>
+/*
+  jQuery(".ContentNav").click(function(){
+    jQuery("#ContentHome").fadeOut();
+  })*/
+</script>
+
+  </body>
+
+</html>
