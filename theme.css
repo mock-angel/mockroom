@@ -27,6 +27,8 @@
   --box-shadow-depth: 10px;
   
   --background: #d1d3e4;
+  
+  --text-color: #ffffff;
 }
 
 .bg-dark {
