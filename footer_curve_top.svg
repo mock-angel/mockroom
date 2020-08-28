@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   id="svg2"
+   width="192"
+   height="23.4"
+   viewBox="0 0 192 23.4"
+   sodipodi:docname="Untitled.png.svg"
+   inkscape:version="1.0 (b51213c273, 2020-08-10)">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     id="namedview4"
+     showgrid="false"
+     inkscape:zoom="11.313709"
+     inkscape:cx="117.3157"
+     inkscape:cy="18.308486"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g10" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g10">
+    <path
+       style="fill:#d2dede;stroke-width:0.12"
+       d="M 112.2414,23.104721 C 101.28633,22.706406 92.884057,21.248579 67.5,15.423268 50.360998,11.490091 45.688975,10.616157 36.42,9.6095355 21.45028,7.9838068 11.736975,8.61928 1.5951101,11.887882 0.7894206,12.147546 0.1009206,12.359999 0.06511,12.359999 0.0293,12.359999 0,9.5789999 0,6.1799999 V 0 l 95.88765,-5.0987549 c 76.61275,-4.0738261 96.1231,5.09396974 96.1231,5.09396974 -0.005,0.4456372 -0.32625,0.73982866 -2.18935,1.09283256 -3.77327,0.7149278 -6.58472,1.5237241 -11.29092,3.2481583 -4.98515,1.8266518 -5.46397,2.0299466 -13.42908,5.7015923 -9.22322,4.251593 -13.21205,5.855534 -20.23877,8.138183 -11.39487,3.701659 -22.05831,5.312797 -32.62123,4.92874 z"
+       id="path112"
+       sodipodi:nodetypes="sssssscscsssss" />
+  </g>
+</svg>

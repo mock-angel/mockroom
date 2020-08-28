@@ -53,17 +53,30 @@
 
   </head>
 
-  <body>
+  <body class="bg-tertiary">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
-
+<!--
+<style>
+.navbar {
+    position: relative;
+}
+.navbar-brand {
+    position: absolute;
+    left:50%;
+    margin: auto;
+    margin-left: -50px !important;  /* 50% of your logo width */
+    display: block;
+}
+</style>
+-->
   <!--Main Navigation-->
   <header>
-    <nav class="navbar navbar-expand-md navbar-light noselect">
+    <nav class="navbar navbar-expand-md navbar-light bg-tertiary noselect">
       <div class="container">
 
         <!-- Navbar content -->
@@ -109,13 +122,8 @@
     <!---->
 
 <style>
-
-body{
-  transition: background-color .4s ease;
-}
-
  .left-half-section{
-	width:90%;
+	width: 90%;
 	/*height:350px;*/
 	background: linear-gradient(to bottom, rgba(0,0,0,0) 60%, var(--secondary) 40%);
 }
@@ -140,67 +148,6 @@ body{
 
   <!--Main layout-->
   <main id="ContentHome" style="font-family: Karla;" class="">
-
-<section>
-  <div style="height:400px; width:100%;">
-
-    <div class="container mx-auto pt-3">
-      <h2 style="text-align:center;">Hello!</h2>
-      <div>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </div>
-    </div>
-
-  </div>
-  
-  
-  
-  
-</section>
-
-<section>
-
-  <div  class="bg-secondary curved-div">
-    <img src="vectors/home_top_orange.svg" class="" alt="Kiwi standing on oval" />
-  </div>
-  
-  <div style="height:400px;" class="bg-secondary " >
-
-
-    <div style="text-align:center; float:left; width:50%;">
-      <h2 style="text-align:center; ">Hello!</h2>
-      <div >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed dignissim massa. Fusce nec diam et mi auctor ultrices in vel mauris. Nam dignissim, massa vitae tincidunt tincidunt, ipsum nisi egestas ligula, at maximus quam nunc eleifend ex. Cras lacinia, nisl at congue volutpat, velit enim aliquam elit, eget luctus eros dui vel lacus. Suspendisse felis felis, efficitur sit amet ultrices nec, sodales at felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi neque enim, tincidunt quis quam a, dapibus volutpat sem. Maecenas egestas cursus ex, faucibus hendrerit odio imperdiet nec. Proin pellentesque venenatis neque sit amet lacinia. Aenean vel sapien aliquet, fermentum purus dictum, condimentum urna.
-      </div>
-    </div>
-
-    <div class="container mx-auto pt-3" style="float:right;  width:50%;">
-      <h2 style="text-align:center; letter-spacing: 2px; ">WELCOME</h2>
-      <div>
-        Etiam ultricies ipsum vitae dui ullamcorper, ac viverra nibh pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec placerat odio non sapien ultrices pulvinar. Duis nec diam pharetra, mollis metus maximus, interdum lectus. Praesent pharetra pretium tortor, et gravida tellus convallis sed. In non nulla et odio tempus congue nec laoreet ipsum. Vestibulum ac magna sed odio eleifend vehicula vitae vitae neque. Integer volutpat justo et interdum maximus. Sed eget magna egestas, consectetur orci vel, varius purus. Sed sagittis faucibus urna. In ultrices commodo odio, ornare hendrerit purus scelerisque vitae. Donec fermentum maximus sapien, ac ultricies lectus bibendum ut.
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <div  class="bg-tertiary curved-div">
-    <img src="vectors/home_mid_orange.svg" class="" alt="Kiwi standing on oval" />
-  </div>
-  <div style="height:400px;" class="bg-tertiary">
-
-  </div>
-</section>
-
-<section>
-  <div  class="bg-secondary curved-div">
-    <img src="vectors/bottom_blue.svg" class="" alt="Kiwi standing on oval" />
-    <div>
-      <h2 class="mx-auto tabs-container" style="text-align:center; width:50%;"><b>Recent Posts</b></h2>
-    </div>
-  </div>
-</section>
 
   </main>
   <!--Main layout-->
@@ -249,7 +196,7 @@ body{
 </style>
   
 <section>
-  <div  class="container">
+  <div  class="bg-tertiary container">
 
     <div>
       
@@ -258,7 +205,7 @@ body{
 <h2 class="mx-auto container pt-4 pb-2"  style="text-align:center; width:50%;"><b>About Me</b></h2>
   
 <p>
-&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis eros sem, hendrerit convallis ex feugiat at. Aenean feugiat felis hendrerit, posuere ipsum sed, accumsan lorem. Curabitur mollis purus quam, sit amet molestie est aliquam non. Integer feugiat ex sit amet est maximus, a lacinia erat varius. Donec sed tincidunt nisi, aliquam dictum nisl. Ut vehicula arcu eu urna congue, ac gravida erat lacinia. Sed molestie sem nec ultrices elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum maximus eros at efficitur. Donec ullamcorper volutpat arcu vitae vehicula. Vestibulum a nunc scelerisque, interdum odio in, volutpat leo. Vestibulum tempor turpis dignissim, lobortis risus a, laoreet risus.
+      &nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent venenatis eros sem, hendrerit convallis ex feugiat at. Aenean feugiat felis hendrerit, posuere ipsum sed, accumsan lorem. Curabitur mollis purus quam, sit amet molestie est aliquam non. Integer feugiat ex sit amet est maximus, a lacinia erat varius. Donec sed tincidunt nisi, aliquam dictum nisl. Ut vehicula arcu eu urna congue, ac gravida erat lacinia. Sed molestie sem nec ultrices elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam bibendum maximus eros at efficitur. Donec ullamcorper volutpat arcu vitae vehicula. Vestibulum a nunc scelerisque, interdum odio in, volutpat leo. Vestibulum tempor turpis dignissim, lobortis risus a, laoreet risus.
 <p>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Maecenas elementum maximus tempus. Fusce posuere magna dolor, vitae sollicitudin nisi feugiat in. Cras faucibus porta neque, eget porttitor mauris suscipit pretium. Sed ultrices metus dapibus, accumsan massa nec, dapibus magna. Integer tristique rutrum nulla, ac malesuada dui tempor id. Integer feugiat nunc condimentum neque facilisis, vel facilisis quam luctus. Nulla dignissim nibh imperdiet mi laoreet, et aliquet sapien molestie.
@@ -279,61 +226,10 @@ body{
 </section>
     
 <section>
-
-<style>
-
-.postsDynamic{
-    
-  width:250px;
-  height:250px;
-}
-
-@media (max-width:1000px){
-  .postsDynamic{
-    width:200px;
-    height:200px;
-  } 
-}
-
-@media (max-width:800px){
-  .postsDynamic{
-    width:150px;
-    height:150px;
-  } 
-}
-
-@media (max-width:540px){
-  .postsDynamic{
-    width:140px;
-    height:140px;
-  } 
-}
-</style>
-
   <div  class="bg-secondary curved-div">
     <img src="vectors/bottom_d3dfdf.svg" class="" alt="Kiwi standing on oval" style="filter: brightness(1) value(87.5) saturate(5.4); hue-rotate:180deg;"/>
-    <div class="container">
-      <h2 class="mx-auto   " style="text-align:left; "><b>Recent Posts</b></h2>
-    
-    
-      <div class="">
-        <div  class="row justify-content-between">
-          <div style="background:#000000; opacity:.5;" class="mb-5 postsDynamic square">
-          
-          
-          </div>
-          
-          <div style=" background:#000000; opacity:.5;" class="mb-5 postsDynamic square" >
-          
-          
-          
-          </div>
-          
-          <div style="background:#000000; opacity:.5;" class="mb-5 postsDynamic square">
-          
-          </div>
-        </div>
-      </div>
+    <div>
+      <h2 class="mx-auto tabs-container" style="text-align:center; width:50%;"><b>Recent Posts</b></h2>
     </div>
   </div>
 </section>
@@ -620,9 +516,9 @@ function onClickNavBar(contentName) {
   var idTypeIdentifyer = convertToId(contentName);
   var chosenContentNavElements = document.getElementsByClassName(idTypeIdentifyer);
 
-  for(i in strings){
+  for(i in strings)
     if(contentName != strings[i]) jQuery("#"+strings[i]).fadeOut();
-  }
+
 
   console.log(contentNavElements);
   for(var i = 0; i < contentNavElements.length; i++) {
@@ -631,17 +527,6 @@ function onClickNavBar(contentName) {
   }
 
   jQuery("#"+contentName).fadeIn();
-
-  if(contentName == "ContentAbout"){
-  
-    //if(jQuery("body").hasclass("background"))
-    var bg_tertiary_color = getComputedStyle(document.documentElement).getPropertyValue('--tertiary');
-    jQuery("body").css("background", bg_tertiary_color);
-  }
-  else {
-    var bg_normal_color = getComputedStyle(document.documentElement).getPropertyValue('--normal');
-    jQuery("body").css("background", bg_normal_color);
-  }
 
   for(var i = 0; i < chosenContentNavElements.length; i++)
       chosenContentNavElements[i].classList += " active";
