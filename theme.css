@@ -13,38 +13,57 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  
+
   /*--primary: #12bbad;
   --secondary: #4f70ce;*/
-  --primary: #ff7f6d;
-  --secondary: #f1998f;
-  
+  /*--primary: #ff7f6d;*/
+  --primary: #d1d3e4;
+  --secondary: #fbad87;
+  --tertiary: #d3dfdf;
+
   --light: #f3f3f3;
   --dark: #151515;
-  
+
   /* Variables for Content block*/
   --block: #28282a;
   --box-shadow-depth: 10px;
-  
-  --background: #d1d3e4;
-  
+
+  --background: #e9d2b0;
+
   --text-color: #ffffff;
 }
 
 .bg-dark {
-  background-color: var(--dark) !important; }
+  background-color: var(--dark) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.bg-secondary {
+  background-color: var(--secondary) !important;
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary) !important;
+}
+
+.bg-normal {
+  background-color: var(--background) !important;
+}
 
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: black !important; }
-  
+
 .bg-white {
   background-color: var(--white) !important; }
 
 .bg-transparent {
   background-color: transparent !important; }
-  
+
 .bg-light {
   background-color: var(--light) !important; }
 

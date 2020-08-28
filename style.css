@@ -1,0 +1,48 @@
+.curved-div {
+  position: relative;
+  overflow: hidden;
+}
+
+.curved-div img {
+  display: block;
+  width:100%;
+  max-width:100%;
+}
+
+.curved-div.upper {
+  /*background: #fff;*/
+}
+
+
+
+/*
+.curveddiv::before{
+  background: url("vectors/bottom_blue.svg") center bottom no-repeat;
+  content: '';
+  height: 103px;
+  position: absolute;
+  display: block;
+  width: 100%;
+
+}
+.curveddiv::after {
+  background: url("vectors/bottom_blue.svg") center bottom no-repeat;
+  content: '';
+  height: 103px;
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+
+.tabs-container {
+  padding: 1.5rem;
+}
+
+@media (min-width: 980px) {
+  .tabs-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 2rem;
+    width: 800px;
+  }
+}*/
