@@ -80,7 +80,7 @@
         </div>
         
         <span class="navbar-brand" href="#" style="max-width:300px;">
-          <img src="logo_dark_t.png" class=" img-fluid d-block  " alt="Responsive image" style="filter: invert(1);  height: auto;">
+          <img src="vectors/logo_vector.svg" class=" img-fluid d-block  " alt="Responsive image" style="filter: invert(0);  height: auto; width:400px;">
         </span>
 
         <button class="navbar-toggler ml-auto"  type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation" >
@@ -91,7 +91,7 @@
          <ul class="navbar-nav ml-auto">
             
             <li class="nav-item content-nav content-about  mx-auto" id="">
-              <a class="nav-link" href="#" onClick="return onClickNavBar('ContentAbout')">About Me</a>
+              <a class="nav-link" href="#" onClick="return onClick\('ContentAbout')">About Me</a>
             </li>
 
             <li class="nav-item content-nav content-contact  mx-auto" id="">
@@ -193,7 +193,7 @@ body{
 <!-- Recent Posts (secondary BG) -->
 <section class="">
   <div  class="bg-secondary curved-div">
-    <img src="vectors/bottom_d3dfdf.svg" class="" alt="Kiwi standing on oval" style="filter: brightness(1) value(87.5) saturate(5.4); hue-rotate:180deg;"/>
+    <img src="vectors/bottom_d3dfdf.svg" class="" alt="Kiwi standing on oval" />
     <div class="container">
       <h2 class="mx-auto   " style="text-align:left; "><b>Recent Posts</b></h2>
     
@@ -225,39 +225,71 @@ body{
   <!--Main layout-->
 
   <main id="ContentPresets">
+  
+  
+<style>
+  .compareSliderPortrait{
+    width:500px;
+    height: 625px;
+    
+  }
+  
+  .compareSliderLandscape{
+    width:520px;
+    height: 292.5px;
+    
+  }
+
+</style>
     <div class="container pt-4">
 
-
-
+  <div  class="row justify-content-around">
+    <div  class="col justify-content-around">
   <!-- Compare Slider -->
-  <iframe src="Slider.html" loading="lazy" style="width:1000px; height:700px; overflow:hidden;max-width:100%;" frameBorder="0"></iframe>
+  <iframe src="Slider.html" loading="lazy" style="overflow:hidden;max-width:100%; " class="compareSliderPortrait ml-3 pb-3" frameBorder="0"></iframe>
   <!-- Compare Slider -->
-
-
+  
+  <!-- Compare Slider -->
+  <iframe src="Slider.html" loading="lazy" style="overflow:hidden;max-width:100%;" class="compareSliderLandscape" frameBorder="0"></iframe>
+  <!-- Compare Slider -->
     </div>
-
+  
+    <div  class="col justify-content-around">
+  <!-- Compare Slider -->
+  <iframe src="Slider.html" loading="lazy" style="overflow:hidden;max-width:100%;" class="compareSliderLandscape" frameBorder="0"></iframe>
+  <!-- Compare Slider -->
+  
+  <!-- Compare Slider -->
+  <iframe src="Slider.html" loading="lazy" style="overflow:hidden;max-width:100%;" class="compareSliderPortrait pb-3 pt-3 mr-3" frameBorder="0"></iframe>
+  <!-- Compare Slider -->
+      
+      
+          
+      </div>
+    </div>
+  </div>
 <!-- Recent Posts (secondary BG) -->
 <section class="">
   <div  class="bg-secondary curved-div">
-    <img src="vectors/bottom_orange.svg" class="" alt="Kiwi standing on oval" style="filter: brightness(1) value(87.5) saturate(5.4); hue-rotate:180deg;"/>
+    <img src="vectors/bottom_orange.svg" class="" alt="Kiwi standing on oval" />
     <div class="container">
-      <h2 class="mx-auto   " style="text-align:left; "><b>Recent Posts</b></h2>
-    
-    
+      <h2 class="mx-auto" style="text-align:left; "><b>Recent Posts</b></h2>
+      
+      
       <div class="">
         <div  class="row justify-content-between">
-          <div style="background:#000000; opacity:.5;" class="mb-5 postsDynamic square">
+          <div style=" background: #000000; opacity:.5;" class="mb-5 postsDynamic square">
           
           
           </div>
           
-          <div style=" background:#000000; opacity:.5;" class="mb-5 postsDynamic square" >
+          <div style=" background: #000000; opacity:.5;" class="mb-5 postsDynamic square" >
           
           
           
           </div>
           
-          <div style="background:#000000; opacity:.5;" class="mb-5 postsDynamic square">
+          <div style=" background: #000000; opacity:.5;" class="mb-5 postsDynamic square">
           
           </div>
         </div>
@@ -331,7 +363,7 @@ body{
 <!-- Recent Posts (secondary BG) -->
 <section class="">
   <div  class="bg-secondary curved-div">
-    <img src="vectors/bottom_d3dfdf.svg" class="" alt="Kiwi standing on oval" style="filter: brightness(1) value(87.5) saturate(5.4); hue-rotate:180deg;"/>
+    <img src="vectors/bottom_d3dfdf.svg" class="" alt="Kiwi standing on oval" />
     <div class="container">
       <h2 class="mx-auto   " style="text-align:left; "><b>Recent Posts</b></h2>
     
@@ -436,7 +468,7 @@ body{
 <!-- Recent Posts (secondary BG) -->
 <section class="">
   <div  class="bg-secondary curved-div">
-    <img src="vectors/bottom_orange.svg" class="" alt="Kiwi standing on oval" style="filter: brightness(1) value(87.5) saturate(5.4); hue-rotate:180deg;"/>
+    <img src="vectors/bottom_orange.svg" class="" alt="Kiwi standing on oval" />
     <div class="container">
       <h2 class="mx-auto   " style="text-align:left; "><b>Recent Posts</b></h2>
     
@@ -653,7 +685,7 @@ body {
 
         <!-- Links -->
         <!--<h5 class="text-uppercase">LOGO</h5>-->
-        <img src="logo_dark_t.png" class="img-fluid" alt="Responsive image" ><!--style="filter: invert(1);">-->
+        <img src="vectors/logo_vector.svg" class="img-fluid" alt="Responsive image" style="width:416px;filter: invert(1);"><!--style="filter: invert(1);">-->
         <br>
           <hr class="style1" style="background-color: #ffffff;">
 
