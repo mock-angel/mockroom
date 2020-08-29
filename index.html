@@ -135,7 +135,11 @@ body{
   box-shadow: 0px 0px var(--box-shadow-depth);
 }
 
-
+ .top-primary-bottom-secondary{
+	width:90%;
+	/*height:350px;*/
+	background: linear-gradient(to bottom, var(--primary) 1%, var(--secondary) 99%);
+}
 </style>
 
   <!--Main layout-->
@@ -240,17 +244,45 @@ body{
     
   }
 
+@media (max-width: 850px){
+  .compareSliderPortrait{
+    width:225px;
+    height: 281.25px;
+    
+  }
+
+  .compareSliderLandscape{
+    width:225px;
+    height: 126.5625px;
+    
+  }
+}
+
+@media (max-width: 1200px){
+  .compareSliderPortrait{
+    
+    height: 543.75px;
+    
+  }
+
+  .compareSliderLandscape{
+    
+    height: 244.6875px;
+    
+  }
+}
+
 </style>
     <div class="container pt-4">
 
   <div  class="row justify-content-around">
     <div  class="col justify-content-around">
   <!-- Compare Slider -->
-  <iframe src="Slider_portrait_1.html" loading="lazy" style="overflow:hidden;max-width:100%; " class="compareSliderPortrait ml-3 pb-3" frameBorder="0"></iframe>
+  <iframe src="Slider_portrait_1.html" loading="lazy" style="overflow:hidden;max-width:100%; " class="compareSliderPortrait  " frameBorder="0"></iframe>
   <!-- Compare Slider -->
   
   <!-- Compare Slider -->
-  <iframe src="Slider_landscape_1.html" loading="lazy" style="overflow:hidden;max-width:100%;" class="compareSliderLandscape" frameBorder="0"></iframe>
+  <iframe src="Slider_landscape_1.html" loading="lazy" style="overflow:hidden;max-width:100%;" class="compareSliderLandscape " frameBorder="0"></iframe>
   <!-- Compare Slider -->
     </div>
   
@@ -260,7 +292,7 @@ body{
   <!-- Compare Slider -->
   
   <!-- Compare Slider -->
-  <iframe src="Slider_portrait_2.html" loading="lazy" style="overflow:hidden;max-width:100%;" class="compareSliderPortrait pb-3 pt-3 mr-3" frameBorder="0"></iframe>
+  <iframe src="Slider_portrait_2.html" loading="lazy" style="overflow:hidden;max-width:100%;" class="compareSliderPortrait pb-3  " frameBorder="0"></iframe>
   <!-- Compare Slider -->
       
       
