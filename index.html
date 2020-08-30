@@ -136,17 +136,25 @@ body{
 }
 
  .top-primary-bottom-secondary{
-	width:90%;
+	width:100%;
 	/*height:350px;*/
-	background: linear-gradient(to bottom, var(--primary) 1%, var(--secondary) 99%);
+	background: linear-gradient(to bottom, var(--primary) 0%, var(--primary) 1%, var(--secondary)  1%, var(--secondary)  100% );
 }
+
+
+.top-tertiary-bottom-secondary{
+	width:100%;
+	/*height:350px;*/
+	background: linear-gradient(to bottom, var(--tertiary) 0%, var(--tertiary) 1%, var(--secondary)  1%, var(--secondary)  100% );
+}
+
 </style>
 
   <!--Main layout-->
   <main id="ContentHome" style="font-family: Karla;" class="">
 
 <section>
-  <div style="height:400px; width:100%;">
+  <div style="height:400px; width:100%;" class="">
 
     <div class="container mx-auto pt-3">
       <h2 style="text-align:center;">Hello!</h2>
@@ -164,11 +172,11 @@ body{
 
 <section>
 
-  <div  class="bg-secondary curved-div">
+  <div  class="top-primary-bottom-secondary curved-div">
     <img src="vectors/home_top_orange.svg" class="" alt="Kiwi standing on oval" />
   </div>
   
-  <div style="height:400px;" class="bg-secondary " >
+  <div style=" height:400px;" class=" bg-secondary" >
 
 
     <div style="text-align:center; float:left; width:50%;">
@@ -196,7 +204,7 @@ body{
 
 <!-- Recent Posts (secondary BG) -->
 <section class="">
-  <div  class="bg-secondary curved-div">
+  <div  class="top-tertiary-bottom-secondary curved-div">
     <img src="vectors/bottom_d3dfdf.svg" class="" alt="Kiwi standing on oval" />
     <div class="container">
       <h2 class="mx-auto   " style="text-align:left; "><b>Recent Posts</b></h2>
@@ -323,7 +331,7 @@ body{
   </div>
 <!-- Recent Posts (secondary BG) -->
 <section class="">
-  <div  class="bg-secondary curved-div">
+  <div  class="top-primary-bottom-secondary curved-div">
     <img src="vectors/bottom_orange.svg" class="" alt="Kiwi standing on oval" />
     <div class="container">
       <h2 class="mx-auto" style="text-align:left; "><b>Recent Posts</b></h2>
@@ -520,7 +528,7 @@ body{
 
 <!-- Recent Posts (secondary BG) -->
 <section class="">
-  <div  class="bg-secondary curved-div">
+  <div  class="top-primary-bottom-secondary curved-div">
     <img src="vectors/bottom_orange.svg" class="" alt="Kiwi standing on oval" />
     <div class="container">
       <h2 class="mx-auto   " style="text-align:left; "><b>Recent Posts</b></h2>
