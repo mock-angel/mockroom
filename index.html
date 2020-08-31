@@ -404,6 +404,10 @@ body{
 }
 
 .sayHi{
+  transition: font-size .4s ease;
+  transition: background-color .4s ease;
+  margin:auto;
+  
   color: var(--secondary);
   background: #3f3939;
   font-size:25px;
@@ -420,16 +424,19 @@ body{
 
 @media (max-width:700px){
   .sayHi{
+    transition:  background-color .4s ease, font-size .1s ease;
+    
     color: var(--primary);
     background: #3f3939;
-    font-size:25px;
-    width:120px;
-    height:60px;
-    border-radius: 14px 14px;
+    font-size:20px;
+    width:100px;
+    height:50px;
+    border-radius: 15px 15px;
   }
 
   .sayHi:hover{
-    font-size:26px;
+    font-size:23px;
+    
     color:var(--primary);
 
   }
@@ -461,7 +468,7 @@ body{
 &nbsp;&nbsp;&nbsp;&nbsp;Pellentesque eu pulvinar mauris. Cras eget eros in diam semper tristique vitae quis sem. Vivamus nisl ligula, consectetur non tempus ut, hendrerit eu erat. Ut ullamcorper neque at nisi rutrum vulputate. Etiam bibendum tristique semper. Donec magna erat, posuere vitae neque vel, tincidunt volutpat purus. Mauris nec efficitur mauris. Donec accumsan ac orci non sodales. Vestibulum ornare mattis justo. Nullam a augue sit amet augue porta convallis. Fusce sit amet lorem et augue sollicitudin placerat. Aliquam hendrerit diam purus, sit amet euismod felis semper et. Nunc porta mi in odio viverra ornare ac id est. Praesent vitae purus eu mi pellentesque interdum vitae ac massa. Maecenas aliquam non tellus eu pulvinar. Etiam rhoncus cursus elit, scelerisque elementum massa efficitur at.
 </div> 
 <div class="container" align=center >
-  <button class="btn sayHi" type="button" onClick="return onClickNavBar('ContentContact')"> <b> Say Hi!</b> </button>
+  <button class="btn sayHi " type="button" onClick="return onClickNavBar('ContentContact')"> <b > Say Hi!</b> </button>
 </div>
 
     </div>
@@ -516,25 +523,84 @@ body{
         
         <div class="container pt-3" id="" style="text-align: left; max-width: 400px;">
           <form name="submit-to-google-sheet">
-
+            
+            <div class="form-group d-none">
+              <label for="inputDate">Timestamp<label style="color:red;">*</label></label>
+              <input type="text" name="Timestamp" class="form-control" id="inputDate" placeholder="Enter timestamp" disabled>
+            </div>
+            
             <div class="form-group">
-              <label for="Name">Full Name</label>
+              <label for="inputName">Full Name<label style="color:red;">*</label></label>
               <input type="text" name="Name" class="form-control" id="inputName" placeholder="Enter name">
             </div>
             
             <div class="form-group">
-              <label for="Email">Email address</label>
-              <input type="email" name="Email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              <label for="inputEmail1">Email address<label style="color:red;">*</label></label>
+              <input type="email" name="Email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
               <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             
             <div class="form-group">
-              <label for="Number">Your Phone Number</label>
-              <input type="number" name="Number" class="form-control" id="inputNumber" placeholder="Enter number">
+              <label for="inputNumber">Your Phone Number</label>
+              <input type="number" name="Number" class="form-control" id="inputNumber" placeholder="Enter number (optional)">
             </div>
             
             <div class="form-group">
               <label for="example1">What service(s) are you interested in?</label>
+              
+              <div class="container ">
+              
+                <div class="form-check">
+                  <input class="form-check-input " type="radio" name="Services" value="Portrait/fashion shoot" id="service1">
+                  <label class="form-check-label" for="service1">
+                    Portrait/fashion shoot
+                  </label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Services" value="Brand/Product" id="service2">
+                  <label class="form-check-label" for="service2">
+                    Brand/Product
+                  </label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Services" value="Couple shoot" id="service3">
+                  <label class="form-check-label" for="service3">
+                    Couple shoot
+                  </label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Services" value="Pre Wedding" id="service4">
+                  <label class="form-check-label" for="service4">
+                    Pre Wedding
+                  </label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="Services" value="Photo Editing" id="service5">
+                  <label class="form-check-label" for="service5">
+                    Photo Editing
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            
+            <div class="form-group">
+              <label for="inputIdeas">Already got some ideas about your shoot?</label>
+              <textarea type="text" name="Ideas about shoot" class="form-control" id="inputIdeas" placeholder="Let me know"> </textarea>
+            </div>
+            
+            <div class="form-group">
+              <label for="inputProps">Have some interesting props?</label>
+              <input type="text" name="Props" class="form-control" id="inputProps" placeholder="Tell me everything about it..">
+            </div>
+            
+            <div class="form-group">
+              <label for="inputLocation">Have a location in mind?</label>
+              <input type="text" name="Chosen Location" class="form-control" id="inputLocation" placeholder="If not decided, let me suggest!">
             </div>
             
             <!--<div class="form-group form-check">
@@ -549,7 +615,34 @@ body{
             
             <div class="form-group">
               <label for="How did u get to know of us?">How did you hear about me?</label>
-              <input type="text" name="How did u get to know of us?" class="form-control" id="inputHear" placeholder="">
+              <!--input type="text" name="How did u get to know of us?" class="form-control" id="inputHear" placeholder=""-->
+              
+              
+              <div class="container ">
+              
+                <div class="form-check">
+                  <input class="form-check-input " type="radio" name="How did u get to know of us?" value="Social Media" id="hear1">
+                  <label class="form-check-label" for="hear1">
+                    Social Media
+                  </label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="How did u get to know of us?" value="Client Referral" id="hear2">
+                  <label class="form-check-label" for="hear2">
+                    Client Referral
+                  </label>
+                </div>
+                
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" name="How did u get to know of us?" value="Google search" id="hear3">
+                  <label class="form-check-label" for="hear3">
+                    Google search
+                  </label>
+                </div>
+                
+              </div>
+              
             </div>
             
             <button type="submit" class="btn btn-primary" if="submit-form">Submit</button>
@@ -558,8 +651,14 @@ body{
           <script>
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxV0qoFSvJjMxv5Lm0DAAAb5NXF5nt-QL-Y7PwnwAWGFu4ANaE/exec'
             const form = document.forms['submit-to-google-sheet']
-
+            
+            
+            document.getElementById("inputDate").value = new Date()
+            
             form.addEventListener('submit', e => {
+            
+              document.getElementById("inputDate").value = new Date()
+            
               e.preventDefault()
               fetch(scriptURL, { method: 'POST', body: new FormData(form)})
                 .then(response => console.log('Success!', response))
