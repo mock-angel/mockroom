@@ -522,11 +522,11 @@ body{
         <!--<h2 style="text-align:center;padding:20px;">Contact Me</h2>-->
         
         <div class="container pt-3" id="" style="text-align: left; max-width: 400px;">
-          <form name="submit-to-google-sheet">
+          <form name="submit-to-google-sheet" method="post"><!-- action="https://mockroom.000webhostapp.com/form_submit.php"-->
             
             <div class="form-group d-none">
               <label for="inputDate">Timestamp<label style="color:red;">*</label></label>
-              <input type="text" name="Timestamp" class="form-control" id="inputDate" placeholder="Enter timestamp" disabled>
+              <input type="text" name="Timestamp" class="form-control" id="inputDate" placeholder="Enter timestamp">
             </div>
             
             <div class="form-group">
@@ -590,7 +590,7 @@ body{
             
             <div class="form-group">
               <label for="inputIdeas">Already got some ideas about your shoot?</label>
-              <textarea type="text" name="Ideas about shoot" class="form-control" id="inputIdeas" placeholder="Let me know"> </textarea>
+              <textarea type="text" name="shoot_ideas" class="form-control" id="inputIdeas" placeholder="Let me know"> </textarea>
             </div>
             
             <div class="form-group">
@@ -600,7 +600,7 @@ body{
             
             <div class="form-group">
               <label for="inputLocation">Have a location in mind?</label>
-              <input type="text" name="Chosen Location" class="form-control" id="inputLocation" placeholder="If not decided, let me suggest!">
+              <input type="text" name="chosen_location" class="form-control" id="inputLocation" placeholder="If not decided, let me suggest!">
             </div>
             
             <!--<div class="form-group form-check">
@@ -621,21 +621,21 @@ body{
               <div class="container ">
               
                 <div class="form-check">
-                  <input class="form-check-input " type="radio" name="How did u get to know of us?" value="Social Media" id="hear1">
+                  <input class="form-check-input " type="radio" name="know_us" value="Social Media" id="hear1">
                   <label class="form-check-label" for="hear1">
                     Social Media
                   </label>
                 </div>
                 
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="How did u get to know of us?" value="Client Referral" id="hear2">
+                  <input class="form-check-input" type="radio" name="know_us" value="Client Referral" id="hear2">
                   <label class="form-check-label" for="hear2">
                     Client Referral
                   </label>
                 </div>
                 
                 <div class="form-check">
-                  <input class="form-check-input" type="radio" name="How did u get to know of us?" value="Google search" id="hear3">
+                  <input class="form-check-input" type="radio" name="know_us" value="Google search" id="hear3">
                   <label class="form-check-label" for="hear3">
                     Google search
                   </label>
@@ -649,6 +649,8 @@ body{
           </form>
           
           <script>
+          
+            const toEmailURI = 'https://mockroom.000webhostapp.com/form_submit.php'
             const scriptURL = 'https://script.google.com/macros/s/AKfycbxV0qoFSvJjMxv5Lm0DAAAb5NXF5nt-QL-Y7PwnwAWGFu4ANaE/exec'
             const form = document.forms['submit-to-google-sheet']
             
@@ -656,16 +658,19 @@ body{
             document.getElementById("inputDate").value = new Date()
             
             form.addEventListener('submit', e => {
-            
+              
               document.getElementById("inputDate").value = new Date()
             
               e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+              fetch(toEmailURI, { method: 'POST', body: new FormData(form)})
                 .then(response => console.log('Success!', response))
                 .catch(error => console.error('Error!', error.message))
             })
+            
+            
+            
             $('img').on('dragstart', function(event) { event.preventDefault(); });
-
+        
           </script>
         </div>
       </div>
