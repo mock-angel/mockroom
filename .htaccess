@@ -1,0 +1,2 @@
+# Custom 404 Not Found Error Page
+ErrorDocument 404 http://mobocamphotography.ezyro.com/error.html
