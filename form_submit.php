@@ -1,8 +1,12 @@
 <?php
+header("Access-Control-Allow-Origin: *");
+header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
+header('Content-Type: application/json');
+
 if(!isset($_POST['submit']))
 {
-  echo "error; cannot load page";
-  
+  echo '{"status":"error"}';
 }
 $full_name = $_POST['Name'];//$_POST[''];
 $email = $_POST['Email'];//$_POST[''];
@@ -10,22 +14,29 @@ $email = $_POST['Email'];//$_POST[''];
 $timestamp = $_POST['Timestamp'];
 $phone_number = $_POST['Number'];
 
-$services = $_POST['Services'];
+
+if(!isset($_POST['Services']))
+  $services = "None Selected";
+else $services = $_POST['Services'];
+
+if(!isset($_POST['know_us']))
+  $how_did_ya_find_me = "None Selected";
+else $how_did_ya_find_me = $_POST['know_us'];
+
 $ideas_about_shoot = $_POST['shoot_ideas'];
 $props = $_POST['Props'];
 $chosen_location = $_POST['chosen_location'];
-$how_did_ya_find_me = $_POST['know_us'];
 
 
 //Validate first
 if(empty($full_name)||empty($email))
 { 
   
-  echo "exiting";
+  echo '{"status":"error"}';
   
 }
 
-$email_from = "anantha.19cs008@sode-edu.in";
+$email_from = "noreply";
 $email_subject = "Mobocam WEB: $email has filled the form.";
 $email_body = "<html><body>".
       "<h3>Form Data:</h3>\n".
@@ -54,17 +65,39 @@ $email_body = "<html><body>".
       "\tHave a location in mind?: $chosen_location \n".
       "\tHow did you hear about me?: $how_did_ya_find_me \n";
       */
-      
+$allowedOrigins = array(
+  //'(http(s)://)?(www\.)?my\-domain\.com',
+  '*'
+);
       
 $headers = "From: $email_from \r\n".
         "MIME-Version: 1.0\r\n".
-        "Content-Type: text/html; charset=ISO-8859-1\r\n".
-        "Access-Control-Allow-Origin: http://localhost:3000";
+        "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
 $to = "sujakrishnar@gmail.com";
 $to_main = "mobocamphotography@gmail.com";
 //done. Redirect to thank you page.
-mail($to_main, $email_subject, $email_body, $headers);
+//mail($to_main, $email_subject, $email_body, $headers);
 mail($to, $email_subject, $email_body, $headers);
 
+if (isset($_SERVER['HTTP_ORIGIN']) && $_SERVER['HTTP_ORIGIN'] != '') {
 
+  foreach ($allowedOrigins as $allowedOrigin) {
+      break;
+      if (preg_match('#' . $allowedOrigin . '#', $_SERVER['HTTP_ORIGIN'])) {
+        header('Access-Control-Allow-Origin: ' . $_SERVER['HTTP_ORIGIN']);
+        header('Access-Control-Allow-Methods: GET, PUT, POST, DELETE, OPTIONS');
+        header('Access-Control-Max-Age: 1000');
+        header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
+        break;
+      }
+    }
+}
+
+
+//header('Access-Control-Max-Age: 86400');
+//header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
+//echo "exit body loop exiting";
+echo '{"status":"error"}';
+echo '{"body":"done!"}';
+//var_dump($_POST);
