@@ -171,47 +171,88 @@ body{
 
   </div-->
 
-
-
-
 </section>
 
 <section>
   <style>
     .top_pos {
-      position: relative;
+    /*  position: relative;*/
 
     }
 
     /* Bottom left text */
-    .bottom-left {
-      position: absolute;
-      top: 125px;
-      left: 100px;
+    .bottom-left-sub {
+
+      position:static;
+      width: 000px;
     }
 
 
 
-    .bottom-left-1 {
-      position: absolute;
-      top: 0px;
-      left: 200px;
+    .bottom-left-main {
+      position:static;
+      width:100%;
     }
+
+    .container-flex-only{
+
+      display: flex;
+    }
+    .img-set-top{
+      width:80%;
+      width:400px;
+      height:500px;
+
+    }
+
+    @media (max-width:1000px){
+
+      .bottom-left-main {
+        position: static;
+
+        width:100%;
+
+      }
+
+      .bottom-left-sub {
+        position: static;
+
+        width:000%;
+      }
+
+      .img-set-top{
+        width:80%;
+        height:500px;
+      }
+
+    }
+
+
+.bottom-img-prime{
+
+}
+
+
+
 
   </style>
 <div class="top_pos">
-  <div  class="top-primary-bottom-secondary curved-div ">
+  <div  class="top-primary-bottom-secondary curved-div top-img mt-5" >
     <img src="vectors/home_top_orange.svg" class="" alt="Kiwi standing on oval" />
 
   </div>
 
-  <div style=" height:400px;" class=" bg-secondary" >
-    <div class="bottom-left-1"><img src="img/DSC_3091ff.jpg"  style="width:400px;"/></div>
-    <div class="bottom-left"><img src="img/IMG_20191130_103430.jpg" style="width:20%;"/></div>
+  <div style="" class="row bg-secondary ">
+    <div class="col-sm">
+      <div class="img-set-top mx-auto">
+        <div class="bottom-left-main"><img src="img/DSC_3091ff.jpg" class="bottom-img-prime" style="width:100%;" /></div>
+        <div class="bottom-left-sub"><img src="img/IMG_20191130_103430.jpg" style="width:100%;" ></div>
+      </div>
+
+    </div>
 
 
-
-    <div class="container mx-auto pt-3" style="float:right;  width:50%; overflow:hidden;">
+    <div class="col-sm mx-auto pt-3" style=" overflow:hidden;">
       <h2 style="text-align:center; letter-spacing: 2px; ">WELCOME</h2>
       <div>
         Etiam ultricies ipsum vitae dui ullamcorper, ac viverra nibh pharetra. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec placerat odio non sapien ultrices pulvinar. Duis nec diam pharetra, mollis metus maximus, interdum lectus. Praesent pharetra pretium tortor, et gravida tellus convallis sed. In non nulla et odio tempus congue nec laoreet ipsum. Vestibulum ac magna sed odio eleifend vehicula vitae vitae neque. Integer volutpat justo et interdum maximus. Sed eget magna egestas, consectetur orci vel, varius purus. Sed sagittis faucibus urna. In ultrices commodo odio, ornare hendrerit purus scelerisque vitae. Donec fermentum maximus sapien, ac ultricies lectus bibendum ut.
@@ -241,19 +282,19 @@ body{
 
       <div class="">
         <div  class="row justify-content-between">
-          <div style="background:#000000; opacity:.5;" class="mb-5 postsDynamic square">
+          <div style="" class="mb-5 postsDynamic square">
 
+            <img style="width:100%;height:100%;" class="content-1"></img>
+          </div>
+
+          <div style=" " class="mb-5 postsDynamic square" >
+
+            <img style="width:100%;height:100%;" class="content-2"></img>
 
           </div>
 
-          <div style=" background:#000000; opacity:.5;" class="mb-5 postsDynamic square" >
-
-
-
-          </div>
-
-          <div style="background:#000000; opacity:.5;" class="mb-5 postsDynamic square">
-
+          <div style="" class="mb-5 postsDynamic square">
+              <img style="width:100%;height:100%;" class="content-3"></img>
           </div>
         </div>
       </div>
@@ -368,19 +409,19 @@ body{
 
       <div class="">
         <div  class="row justify-content-between">
-          <div style=" background: #000000; opacity:.5;" class="mb-5 postsDynamic square">
+          <div style="" class="mb-5 postsDynamic square">
 
+            <img style="width:100%;height:100%;" class="content-1"></img>
+          </div>
+
+          <div style=" " class="mb-5 postsDynamic square" >
+
+            <img style="width:100%;height:100%;" class="content-2"></img>
 
           </div>
 
-          <div style=" background: #000000; opacity:.5;" class="mb-5 postsDynamic square" >
-
-
-
-          </div>
-
-          <div style=" background: #000000; opacity:.5;" class="mb-5 postsDynamic square">
-
+          <div style="" class="mb-5 postsDynamic square">
+              <img style="width:100%;height:100%;" class="content-3"></img>
           </div>
         </div>
       </div>
@@ -485,19 +526,19 @@ body{
 
       <div class="">
         <div  class="row justify-content-between">
-          <div style="background:#000000; opacity:.5;" class="mb-5 postsDynamic square">
+          <div style="" class="mb-5 postsDynamic square">
 
+            <img style="width:100%;height:100%;" class="content-1"></img>
+          </div>
+
+          <div style=" " class="mb-5 postsDynamic square" >
+
+            <img style="width:100%;height:100%;" class="content-2"></img>
 
           </div>
 
-          <div style=" background:#000000; opacity:.5;" class="mb-5 postsDynamic square" >
-
-
-
-          </div>
-
-          <div style="background:#000000; opacity:.5;" class="mb-5 postsDynamic square">
-
+          <div style="" class="mb-5 postsDynamic square">
+              <img style="width:100%;height:100%;" class="content-3"></img>
           </div>
         </div>
       </div>
@@ -570,7 +611,7 @@ body{
               </div>
 
               <div class="form-group">
-                <label for="example1">What service(s) are you interested in?</label>
+                <label for="example1">What service(s) are you interested in?<label style="color:red;">*</label></label>
 
                 <div class="container ">
 
@@ -677,7 +718,7 @@ body{
               const toEmailURI = 'https://mockroom.000webhostapp.com/form_submit.php'
               const scriptURL = 'https://script.google.com/macros/s/AKfycbxV0qoFSvJjMxv5Lm0DAAAb5NXF5nt-QL-Y7PwnwAWGFu4ANaE/exec'
               const form = document.forms['submit-to-google-sheet']
-
+              const toRecentPostsURI = "https://mockroom.000webhostapp.com/get_content.php"
 
               document.getElementById("inputDate").value = new Date()
 
@@ -755,6 +796,53 @@ body{
 
               $('img').on('dragstart', function(event) { event.preventDefault(); });
 
+
+              function getRecentPosts(){
+                fetch(toRecentPostsURI, { method: 'POST' })
+                  .then(response => response.json())
+                  .then(function(data){
+                    $content = JSON.parse(data);
+                    $content.content_0;
+                    $content.content_1;
+                    $content.content_2;
+
+
+                    var contentElements1 = document.getElementsByClassName("content-1");
+                    var contentElements2 = document.getElementsByClassName("content-2");
+                    var contentElements3 = document.getElementsByClassName("content-3");
+
+                    for(var i = 0; i < contentElements1.length; i++) {
+                      contentElements1[i].src = $content.content_0;;
+                      //console.log(contentNavElements[i].classList);
+                    }
+
+                    for(var i = 0; i < contentElements2.length; i++) {
+                      contentElements2[i].src = $content.content_1;;
+                      //console.log(contentNavElements[i].classList);
+                    }
+
+                    for(var i = 0; i < contentElements3.length; i++) {
+                      contentElements3[i].src = $content.content_2;;
+                      //console.log(contentNavElements[i].classList);
+                    }
+
+                    //console.log("hell", data.data.user.edge_owner_to_timeline_media.edges[0].node.thumbnail_resources[4].src);
+                    //console.log("hell", data.data.user.edge_owner_to_timeline_media.edges[1].node.thumbnail_resources[4].src);
+                    //console.log("hell", data.data.user.edge_owner_to_timeline_media.edges[2].node.thumbnail_resources[4].src);
+                    //const src1 = data.data.user.edge_owner_to_timeline_media.edges[0].node.thumbnail_resources[4].src;
+                    //const src2 = data.data.user.edge_owner_to_timeline_media.edges[1].node.thumbnail_resources[4].src;
+                    //const src3 = data.data.user.edge_owner_to_timeline_media.edges[2].node.thumbnail_resources[4].src;
+                  })
+                  //.then(function (response) {
+                  //  console.log(response.text());
+                  //})
+                  .catch(error => {
+
+                      console.error('Error!', error.message)
+
+                  });
+                }
+              getRecentPosts();
             </script>
           </div>
 
@@ -772,19 +860,19 @@ body{
 
       <div class="">
         <div  class="row justify-content-between">
-          <div style="background:#000000; opacity:.5;" class="mb-5 postsDynamic square">
+          <div style="" class="mb-5 postsDynamic square">
 
+            <img style="width:100%;height:100%;" class="content-1"></img>
+          </div>
+
+          <div style=" " class="mb-5 postsDynamic square" >
+
+            <img style="width:100%;height:100%;" class="content-2"></img>
 
           </div>
 
-          <div style=" background:#000000; opacity:.5;" class="mb-5 postsDynamic square" >
-
-
-
-          </div>
-
-          <div style="background:#000000; opacity:.5;" class="mb-5 postsDynamic square">
-
+          <div style="" class="mb-5 postsDynamic square">
+              <img style="width:100%;height:100%;" class="content-3"></img>
           </div>
         </div>
       </div>
