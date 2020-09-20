@@ -18,6 +18,8 @@
     <!-- Style CSS (not required i guess)-->
     <link rel="stylesheet" href="style.css">
 
+    <!-- FontAwesome for Insta and Youtube icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -877,36 +879,25 @@ body{
                     var contentElements5 = document.getElementsByClassName("content-5");
                     var contentElements6 = document.getElementsByClassName("content-6");
 
-                    for(var i = 0; i < contentElements1.length; i++) {
-                      contentElements1[i].src = $content.content_0;;
-                      //console.log(contentNavElements[i].classList);
-                    }
-
-                    for(var i = 0; i < contentElements2.length; i++) {
-                      contentElements2[i].src = $content.content_1;;
-                      //console.log(contentNavElements[i].classList);
-                    }
-
-                    for(var i = 0; i < contentElements3.length; i++) {
-                      contentElements3[i].src = $content.content_2;;
-                      //console.log(content a elements[i].classList);
-                    }
-
-                    for(var i = 0; i < contentElements4.length; i++) {
-                      contentElements4[i].src = $content.content_3;;
-                      //console.log(contentNavElements[i].classList);
-                    }
+                    for(var i = 0; i < contentElements1.length; i++)
+                      contentElements1[i].src = $content.content_0;
 
 
-                    for(var i = 0; i < contentElements4.length; i++) {
-                      contentElements5[i].src = $content.content_4;;
-                      //console.log(contentNavElements[i].classList);
-                    }
+                    for(var i = 0; i < contentElements2.length; i++)
+                      contentElements2[i].src = $content.content_1;
 
-                    for(var i = 0; i < contentElements5.length; i++) {
-                      contentElements6[i].src = $content.content_5;;
-                      //console.log(contentNavElements[i].classList);
-                    }
+                    for(var i = 0; i < contentElements3.length; i++)
+                      contentElements3[i].src = $content.content_2;
+
+                    for(var i = 0; i < contentElements4.length; i++)
+                      contentElements4[i].src = $content.content_3;
+
+
+                    for(var i = 0; i < contentElements4.length; i++)
+                      contentElements5[i].src = $content.content_4;
+
+                    for(var i = 0; i < contentElements5.length; i++)
+                      contentElements6[i].src = $content.content_5;
 
                     var linkElements1 = document.getElementsByClassName("link-1");
                     var linkElements2 = document.getElementsByClassName("link-2");
@@ -914,48 +905,27 @@ body{
                     var linkElements4 = document.getElementsByClassName("link-4");
                     var linkElements5 = document.getElementsByClassName("link-5");
                     var linkElements6 = document.getElementsByClassName("link-6");
-                    console.log(linkElements1);
-                    for(var i = 0; i < linkElements1.length; i++) {
-                      linkElements1[i].href = "https://www.instagram.com/p/"+$content.link_0+"/";;
-                      //console.log(contentNavElements[i].classList);
-                    }
 
-                    for(var i = 0; i < linkElements2.length; i++) {
-                      linkElements2[i].href = "https://www.instagram.com/p/"+$content.link_1+"/";;
-                      //console.log(contentNavElements[i].classList);
-                    }
+                    for(var i = 0; i < linkElements1.length; i++)
+                      linkElements1[i].href = "https://www.instagram.com/p/"+$content.link_0+"/";
 
-                    for(var i = 0; i < linkElements3.length; i++) {
-                      linkElements3[i].href = "https://www.instagram.com/p/"+$content.link_2+"/";;
-                      //console.log(content a elements[i].classList);
-                    }
+                    for(var i = 0; i < linkElements2.length; i++)
+                      linkElements2[i].href = "https://www.instagram.com/p/"+$content.link_1+"/";
 
-                    for(var i = 0; i < linkElements4.length; i++) {
-                      linkElements4[i].href = "https://www.instagram.com/p/"+$content.link_3+"/";;
-                      //console.log(contentNavElements[i].classList);
-                    }
+                    for(var i = 0; i < linkElements3.length; i++)
+                      linkElements3[i].href = "https://www.instagram.com/p/"+$content.link_2+"/";
+
+                    for(var i = 0; i < linkElements4.length; i++)
+                      linkElements4[i].href = "https://www.instagram.com/p/"+$content.link_3+"/";
 
 
-                    for(var i = 0; i < linkElements5.length; i++) {
-                      linkElements5[i].href = "https://www.instagram.com/p/"+$content.link_4+"/";;
-                      //console.log(contentNavElements[i].classList);
-                    }
+                    for(var i = 0; i < linkElements5.length; i++)
+                      linkElements5[i].href = "https://www.instagram.com/p/"+$content.link_4+"/";
 
-                    for(var i = 0; i < linkElements6.length; i++) {
-                      linkElements6[i].href = "https://www.instagram.com/p/"+$content.link_5+"/";;
-                      //console.log(contentNavElements[i].classList);
-                    }
+                    for(var i = 0; i < linkElements6.length; i++)
+                      linkElements6[i].href = "https://www.instagram.com/p/"+$content.link_5+"/";
 
-                    //console.log("hell", data.data.user.edge_owner_to_timeline_media.edges[0].node.thumbnail_resources[4].src);
-                    //console.log("hell", data.data.user.edge_owner_to_timeline_media.edges[1].node.thumbnail_resources[4].src);
-                    //console.log("hell", data.data.user.edge_owner_to_timeline_media.edges[2].node.thumbnail_resources[4].src);
-                    //const src1 = data.data.user.edge_owner_to_timeline_media.edges[0].node.thumbnail_resources[4].src;
-                    //const src2 = data.data.user.edge_owner_to_timeline_media.edges[1].node.thumbnail_resources[4].src;
-                    //const src3 = data.data.user.edge_owner_to_timeline_media.edges[2].node.thumbnail_resources[4].src;
                   })
-                  //.then(function (response) {
-                  //  console.log(response.text());
-                  //})
                   .catch(error => {
 
                       console.error('Error!', error.message)
@@ -1201,6 +1171,10 @@ body {
         <address class="white_link">
           <h5 class="text-uppercase" >Contact Me</h5>
           <p><a href="mailto:mobocamphotography@gmail.com">mobocamphotography@gmail.com</a></p>
+          <div class="">
+            <a href="https://www.instagram.com/mobocam_photography/"><div class="fa fa-instagram pr-1" style="font-size:20px;color:white" target="_blank"></div></a>
+            <a href="https://www.youtube.com/channel/UCoPPOzdy8Z6r68F27zXeJDw/featured?disable_polymer=1"><div class="fa fa-youtube-play" style="font-size:20px;color:white" target="_blank"></div></a>
+          </div>
         </address>
       </div>
       <!-- Grid column -->
